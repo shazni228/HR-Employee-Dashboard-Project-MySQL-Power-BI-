@@ -1,28 +1,47 @@
-HR Analytics Dashboard
+# HR Analytics Dashboard
 
-Data Used
-The data was obtained from the HR department and contained over 22,000 employee records from 2000 to 2020. It included details like employee id, name, department, location, hire date, term date, job title, gender, ethnicity and other attributes.
+A dashboard created to analyze employee data and provide insights into workforce demographics, turnover trends, and areas for improvement.
 
-Data Cleaning and Analysis with MySQL
-The data was imported into MySQL Workbench for cleaning and analysis. Records with negative ages (967) and future termination dates (1599) were excluded. Additional fields like age, tenure, state were calculated.
+## Data
+The data was obtained from the HR department and contained over 22,000 employee records from 2000-2020 including:
+- Employee ID
+- Name 
+- Department
+- Location
+- Hire date
+- Termination date 
+- Job title
+- Gender
+- Ethnicity
+- Other attributes
 
-Data Visualization in Power BI
-The cleaned data from MySQL was connected to Power BI for interactive visualization and dashboarding.
+## Data Cleaning
+The raw data was imported into MySQL Workbench for cleaning and analysis. Records with:
+- Negative ages (967 records)
+- Future termination dates (1599 records)
+Were excluded to ensure only valid data was analyzed. 
 
-Key Insights
+Additional derived fields like age, tenure, state were calculated during this stage.
 
-Majority of employees were males.
-White ethnicity had the highest representation, while Native Hawaiian and American Indian were least.
-Most employees were between 25-34 years old.
-Headquarters had more employees than remote locations.
-Average tenure for terminated employees was 7 years.
-Gender distribution varied across departments and titles.
-Marketing department had the highest turnover.
-Ohio had the most number of employees by state.
-Total employee count increased over time.
-Legal and Auditing had the highest average tenure.
-Services, Sales and Marketing had the lowest average tenure.
-Limitations
-Records with invalid ages/dates were excluded during data cleaning in MySQL. Additional records could potentially exist outside the analyzed time period.
+## Data Visualization
+The cleaned data from MySQL was connected to Power BI for interactive visualization and dashboarding. A variety of chart types like pie charts, bar graphs, and maps were used.
 
-This dashboard provided valuable insights into the company's workforce demographics, turnover trends, and optimization opportunities. Regular updates can help track progress on people initiatives.
+## Insights
+Key insights into workforce demographics, trends, and opportunities included:
+- Male to female ratio 
+- Ethnicity representation
+- Age and tenure distributions
+- Headquarters vs remote split
+- Departmental and location turnover
+- Gender distribution by role and department
+- Changes over time from 2000-2020
+
+## Future Enhancements
+Areas of potential improvement include:
+- Incorporating additional years of data as it becomes available
+- Deep diving insights by role, level, ethnicity subgroups
+- Benchmarking against industry/location norms  
+- Predictive modeling for attrition risks
+- Interactive filters and drilldowns
+
+Let me know if you have any other questions!
